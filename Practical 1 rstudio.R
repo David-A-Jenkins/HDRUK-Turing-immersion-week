@@ -20,7 +20,7 @@ smart$albumin <- as.factor(smart$albumin)
 levels(smart$albumin)
 smart$albumin <- revalue(smart$albumin, c("1"="No", "2"="Low", "3"="High"))
 levels(smart$albumin)
-There are 2 variables for systolic blood pressure (SBP) because it can either done by hand or automatic. If we check, we can see there is a lot of missing data in both of the SBP variables.
+#There are 2 variables for systolic blood pressure (SBP) because it can either done by hand or automatic. If we check, we can see there is a lot of missing data in both of the SBP variables.
 
 table(is.na(smart$SYSTBP)==FALSE)
 
